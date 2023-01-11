@@ -3,3 +3,11 @@
   <li>{{ animal.name }}</li>
   <li>{{ animal.age }}</li>
 </ul>
+<app-zoo-animal
+  *ngFor="let animal of animallist"
+  [animal]="animal"
+  (liked)="onlike(animal)"
+></app-zoo-animal>
+<!-- <div>
+  <a href="/about">about me</a>
+</div> -->

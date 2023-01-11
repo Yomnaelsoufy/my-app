@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Animal } from '../model/Animal';
+import { AnimalsService } from '../services/animals.service';
 @Component({
   selector: 'app-animal',
   templateUrl: './animal.component.html',
@@ -7,17 +8,11 @@ import { Animal } from '../model/Animal';
 })
 export class AnimalComponent {
   animallist: Animal[] = [];
-  constructor() {}
+  constructor(private animalservice: AnimalsService) {}
+  onlike(animal: Animal): void {
+    window.alert(`I like the ${animal.name}`);
+  }
   ngOnInit(): void {
-    this.animallist = [
-      {
-        name: 'cat',
-        age: 2,
-      },
-      {
-        name: 'elephant',
-        age: 50,
-      },
-    ];
+    this.animallist = this.animalservice.getAnimals();
   }
 }

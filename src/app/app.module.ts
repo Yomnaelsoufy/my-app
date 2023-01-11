@@ -7,6 +7,7 @@ import { AboutComponent } from './components/about/about.component';
 import { PhotosComponent } from './photos/photos.component';
 import { MoviesComponent } from './movies/movies.component';
 import { AnimalComponent } from './animal/animal.component';
+import { ZooAnimalComponent } from './zoo-animal/zoo-animal.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AnimalComponent } from './animal/animal.component';
     AboutComponent,
     PhotosComponent,
     MoviesComponent,
-    AnimalComponent
+    AnimalComponent,
+    ZooAnimalComponent
   ],
   imports: [
     BrowserModule,
