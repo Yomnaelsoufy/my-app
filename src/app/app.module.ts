@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
@@ -8,7 +7,7 @@ import { PhotosComponent } from './photos/photos.component';
 import { MoviesComponent } from './movies/movies.component';
 import { AnimalComponent } from './animal/animal.component';
 import { ZooAnimalComponent } from './zoo-animal/zoo-animal.component';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,13 +15,11 @@ import { ZooAnimalComponent } from './zoo-animal/zoo-animal.component';
     PhotosComponent,
     MoviesComponent,
     AnimalComponent,
-    ZooAnimalComponent
+    ZooAnimalComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [FlexLayoutModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
