@@ -7,7 +7,6 @@ import { PhotosComponent } from './photos/photos.component';
 import { MoviesComponent } from './movies/movies.component';
 import { AnimalComponent } from './animal/animal.component';
 import { ZooAnimalComponent } from './zoo-animal/zoo-animal.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +16,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AnimalComponent,
     ZooAnimalComponent,
   ],
-  imports: [FlexLayoutModule],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
