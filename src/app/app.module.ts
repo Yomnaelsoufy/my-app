@@ -7,6 +7,8 @@ import { PhotosComponent } from './photos/photos.component';
 import { MoviesComponent } from './movies/movies.component';
 import { AnimalComponent } from './animal/animal.component';
 import { ZooAnimalComponent } from './zoo-animal/zoo-animal.component';
+import { UsersComponent } from './users/users.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,8 +17,9 @@ import { ZooAnimalComponent } from './zoo-animal/zoo-animal.component';
     MoviesComponent,
     AnimalComponent,
     ZooAnimalComponent,
+    UsersComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
